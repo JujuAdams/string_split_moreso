@@ -1,0 +1,9 @@
+{
+  "FolderOrderSettings":[],
+  "ResourceOrderSettings":[
+    {"name":"oTest","order":3,"path":"objects/oTest/oTest.yy",},
+    {"name":"rMain","order":4,"path":"rooms/rMain/rMain.yy",},
+    {"name":"string_split_open_close_escaped","order":2,"path":"scripts/string_split_open_close_escaped/string_split_open_close_escaped.yy",},
+    {"name":"string_split_open_close","order":1,"path":"scripts/string_split_open_close/string_split_open_close.yy",},
+  ],
+}
