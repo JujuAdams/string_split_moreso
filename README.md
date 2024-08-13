@@ -11,7 +11,7 @@ GameMaker's native `string_split()` but with additional support for escape chara
 Examples:
 ```
 string_split_escaped("0#1",     "#")  ->  ["0", "1"]
-string_split_escaped("0\#1",    "#")  ->  ["0#1"]
+string_split_escaped("0\\#1",   "#")  ->  ["0#1"]
 string_split_escaped("0\\\\#1", "#")  ->  ["0\", "1"]
 ```
 
