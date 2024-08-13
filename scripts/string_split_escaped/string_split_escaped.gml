@@ -4,7 +4,7 @@
 /// 
 /// Example:
 ///     string_split_escaped("0#1",     "#")  ->  ["0", "1"]
-///     string_split_escaped("0\#1",    "#")  ->  ["0#1"]
+///     string_split_escaped("0\\#1",   "#")  ->  ["0#1"]
 ///     string_split_escaped("0\\\\#1", "#")  ->  ["0\", "1"]
 /// 
 /// @param string
