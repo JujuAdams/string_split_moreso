@@ -1,5 +1,12 @@
 // Feather disable all
 
+/// GameMaker's native string_split() but with additional support for escape characters.
+/// 
+/// Example:
+///     string_split_escaped("0#1",     "#")  ->  ["0", "1"]
+///     string_split_escaped("0\#1",    "#")  ->  ["0#1"]
+///     string_split_escaped("0\\\\#1", "#")  ->  ["0\", "1"]
+/// 
 /// @param string
 /// @param delimiter
 /// @param [removeEmpty=false]

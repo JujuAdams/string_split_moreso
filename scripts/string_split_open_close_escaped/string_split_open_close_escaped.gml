@@ -1,5 +1,18 @@
 // Feather disable all
 
+/// GameMaker's native string_split() but using an open and close delimiter and supporting escape
+/// characters. This is useful for handling BBCode-style formatting tags etc.  Returned array will
+/// have content found between the open and close delimiters stored in odd-numbered indexes in the
+/// array.
+/// 
+/// N.B. Tags cannot be nested inside other tags.
+/// 
+/// Examples:
+///     string_split_open_close("0[1]2",       "[", "]")  ->  ["0", "1", "2"]
+///     string_split_open_close("[1]",         "[", "]")  ->  ["", "1", ""]
+///     string_split_open_close("\\[0]",       "[", "]")  ->  ["[0]"]
+///     string_split_open_close("0[1][3][5]6", "[", "]")  ->  ["0", "1", "", "3", "", "5", "6"]
+/// 
 /// @param string
 /// @param openDelimiter
 /// @param closeDelimiter
